@@ -2,7 +2,7 @@ resource "helm_release" "jx-git-operator" {
   name             = "jx-git-operator"
   chart            = "jx-git-operator"
   namespace        = "jx-git-operator"
-  repository       = "http://chartmuseum.lydiali.cn:8000/"
+  repository       = "http://chartmuseum.lydiali.cn:8080/"
   version          = "0.0.194"
   create_namespace = true
 
